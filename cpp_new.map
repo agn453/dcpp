@@ -1,0 +1,170 @@
+Machine type is Z80
+
+crtcpm.obj      text            0      1D5	data         6C03       5A
+cpp_new.obj     text          1D5     2ED3	data         6C5D      4C5
+		bss          7C30      FFE
+cpy.obj         text         30A8      988	data         7122      657
+		bss          8C2E      130
+vprintf.obj     text         3A30       21
+
+libc.lib
+start1.obj      text         3A51        3	bss          8D5E        2
+getargs.obj     text         3A54      76F	data         7779       93
+		bss          8D60        A
+fprintf.obj     text         41C3       22
+sprintf.obj     text         41E5       42	bss          8D6A        9
+doprnt.obj      text         4227      328	data         780C        7
+		bss          8D73        5
+gets.obj        text         454F       BD
+fputc.obj       text         460C       74
+flsbuf.obj      text         4680       A7
+freopen.obj     text         4727      1CC
+fseek.obj       text         48F3      2E9
+fread.obj       text         4BDC       93
+fgetc.obj       text         4C6F       9B
+filbuf.obj      text         4D0A       BB
+stdclean.obj    text         4DC5       25	data         7813       48
+		bss          8D78      200
+fclose.obj      text         4DEA       70
+fflush.obj      text         4E5A       94
+buf.obj         text         4EEE       46	bss          8F78        2
+exit.obj        text         4F34       13
+open.obj        text         4F47      1DB
+read.obj        text         5122      346	data         785B        2
+write.obj       text         5468      2C0	data         785D       10
+seek.obj        text         5728       E0
+creat.obj       text         5808       A4
+isatty.obj      text         58AC       37
+cleanup.obj     text         58E3       73	data         786D      170
+close.obj       text         5956       FE	data         79DD        7
+unlink.obj      text         5A54       77
+getfcb.obj      text         5ACB      3BD	data         79E4       18
+getenv.obj      text         5E88      340	data         79FC        E
+		bss          8F7A        3
+fopen.obj       text         61C8       4F
+signal.obj      text         6217       7D	bss          8F7D        2
+getuid.obj      text         6294       19
+bdos.obj        text         62AD       5E	data         7A0A       14
+_exit.obj       text         630B       23
+sys_err.obj     data         7A1E      180	bss          8F7F        2
+memcpy.obj      text         632E       36
+asmod.obj       text         6364       1E
+asladd.obj      text         6382        9
+aslsub.obj      text         638B        9
+atoi.obj        text         6394       40
+asmul.obj       text         63D4        F
+ctype_.obj      data         7B9E       81
+strchr.obj      text         63E3       13
+malloc.obj      text         63F6      315	bss          8F81        F
+idiv.obj        text         670B       6B
+pnum.obj        text         6776      15A	data         7C1F       11
+ldiv.obj        text         68D0      120
+bmove.obj       text         69F0       10
+imul.obj        text         6A00       1F
+alrsh.obj       text         6A1F       14
+sbrk.obj        text         6A33       43	bss          8F90        2
+shar.obj        text         6A76       10
+shll.obj        text         6A86        D
+strcat.obj      text         6A93       1B
+strcmp.obj      text         6AAE       1A
+strcpy.obj      text         6AC8       12
+strlen.obj      text         6ADA        E
+strncmp.obj     text         6AE8       22
+iregset.obj     text         6B0A       26
+ladd.obj        text         6B30        E
+land.obj        text         6B3E       15
+brelop.obj      text         6B53       14
+wrelop.obj      text         6B67        F
+lrelop.obj      text         6B76       25
+lsub.obj        text         6B9B       10
+csv.obj         text         6BAB       28
+rcsv.obj        text         6BD3       1E
+toupper.obj     text         6BF1       12
+
+TOTAL		Name         Link     Load   Length
+		(abs)           0        0        0
+		text            0        0     6C03
+		data         6C03     6C03     102D
+		bss          7C30     7C30     1362
+
+                                  Symbol Table
+
+__Ltext         text  0000  start           text  0100
+_skipbl         text  0AE7  _verror         text  1F6F
+_pperror        text  1FD8  _yyerror        text  2002
+_lookup         text  205D  _yywrap         text  27F6
+_main           text  27FA  _open1          text  2FC1
+_read1          text  3013  _yyparse        text  30A8
+_yylex          text  363A  _tobinary       text  38C2
+_vfprintf       text  3A30  startup         text  3A51
+__getargs       text  3A54  _fprintf        text  41C3
+_sprintf        text  41E5  __doprnt        text  4268
+_fgets          text  454F  _gets           text  45C6
+_fputc          text  460C  __flsbuf        text  4680
+_freopen        text  4727  _fseek          text  49E9
+_ftell          text  4B5B  _fread          text  4BDC
+_fgetc          text  4C6F  __filbuf        text  4D0A
+__cleanup       text  4DC5  _fclose         text  4DEA
+_fflush         text  4E5A  __bufallo       text  4EEE
+__buffree       text  4F18  _exit           text  4F34
+__fsize         text  4F47  _open           text  5026
+_read           text  5122  _write          text  5468
+_lseek          text  5728  _creat          text  5808
+_isatty         text  58AC  __cpm_clean     text  58E3
+__putrno        text  5905  __initrsx       text  5946
+_close          text  5956  _unlink         text  5A54
+_getfcb         text  5AF0  _putfcb         text  5B2F
+_setfcb         text  5B41  _getenv         text  5F43
+_fopen          text  61C8  _signal         text  6217
+__sigchk        text  624A  _getuid         text  6294
+_setuid         text  629B  _bdos           text  62AD
+__exit          text  630B  _memcpy         text  632E
+asamod          text  6364  aslmod          text  6373
+asaladd         text  6382  aslladd         text  6382
+asalsub         text  638B  asllsub         text  638B
+_atoi           text  639B  asamul          text  63D4
+aslmul          text  63D4  _strchr         text  63E3
+_malloc         text  63F6  _free           text  65CF
+_realloc        text  65E9  amod            text  670B
+lmod            text  6710  ldiv            text  6715
+adiv            text  671A  __pnum          text  6776
+asaldiv         text  6907  aldiv           text  691C
+lldiv           text  692F  aslldiv         text  693B
+almod           text  6943  asalmod         text  6955
+llmod           text  695D  asllmod         text  6968
+_bmove          text  69F0  _movmem         text  69F0
+amul            text  6A00  lmul            text  6A00
+alrsh           text  6A1F  _brk            text  6A33
+_sbrk           text  6A3B  _checksp        text  6A67
+shar            text  6A76  shal            text  6A86
+shll            text  6A86  _strcat         text  6A93
+_strcmp         text  6AAE  _strcpy         text  6AC8
+_strlen         text  6ADA  _strncmp        text  6AE8
+iregset         text  6B0A  iregstore       text  6B24
+aladd           text  6B30  lladd           text  6B30
+aland           text  6B3E  lland           text  6B3E
+brelop          text  6B53  wrelop          text  6B67
+arelop          text  6B76  lrelop          text  6B76
+alsub           text  6B9B  llsub           text  6B9B
+csv             text  6BAB  cret            text  6BB7
+indir           text  6BBE  ncsv            text  6BBF
+rcsv            text  6BD3  _toupper        text  6BF1
+__Htext         text  6C03  __Ldata         data  6C03
+__z3env         data  6C4D  __piped         data  6C4F
+_char_is_signed data  6C66  _yyexca         data  7122
+_yyact          data  71AE  _yypact         data  7484
+_yypgo          data  7500  _yyr1           data  7508
+_yyr2           data  7544  _yychk          data  7580
+_yydef          data  75FC  _yychar         data  7678
+_yynerrs        data  767A  _yyerrflag      data  767C
+__iob           data  7813  __fcb           data  786D
+_sys_err        data  7A2C  _sys_ner        data  7A64
+__ctype_        data  7B9E  __Hdata         data  7C30
+__Lbss          bss   7C30  _newp           bss   85F3
+_inptr          bss   8601  _flslvl         bss   860D
+_fastab         bss   861D  _outptr         bss   8C28
+_yyval          bss   8C2E  _yyv            bss   8C30
+_yylval         bss   8D5C  __argc_         bss   8D5E
+__sibuf         bss   8D78  _environ        bss   8F7B
+_errno          bss   8F7F  __Hbss          bss   8F92
+

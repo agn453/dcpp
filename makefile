@@ -24,8 +24,8 @@ $(COBJS): %.obj: %.c
 	zxc -c -o  $<
 
 cpp_new.com: $(OBJS)
-	zxcc link -"<" +lkcpp
-	sort cpp_new.sym | uniq > cpp_new.sym.sorted
+	zxlink <lkcpp
+	sort <cpp_new.sym | uniq > cpp_new.sym.sorted
 
 clean:
 	rm -f $(OBJS) cpp_new.com *.\$$\$$\$$ cpp_new.map cpp_new.sym cpp_new.sym.sorted
