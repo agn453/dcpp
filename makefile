@@ -21,7 +21,7 @@ all:	$(COBJS) cpp_new.com
 .SUFFIXES: .c .obj .asm
 
 $(COBJS): %.obj: %.c
-	zxc -c -o  $<
+	zxc -c -o -n $<
 
 cpp_new.com: $(OBJS)
 	zxlink <lkcpp
